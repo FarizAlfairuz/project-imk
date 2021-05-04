@@ -64,8 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameScript\ObstacleDestroyer.cs" />
+    <Compile Include="Assets\GameScript\ObstacleSpawner.cs" />
+    <Compile Include="Assets\GameScript\treadmill.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\treadmill.cs" />
     <None Include="Assets\Nice Materials Pack 2\Shaders\ScratchedWood.shader" />
     <None Include="Assets\Nice Materials Pack 2\Shaders\PaintedWall.shader" />
     <None Include="Assets\Nice Materials Pack 2\Shaders\Stone Tile.shader" />
