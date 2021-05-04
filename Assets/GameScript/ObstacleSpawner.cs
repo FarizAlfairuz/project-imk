@@ -9,6 +9,9 @@ public class ObstacleSpawner : MonoBehaviour
     public Vector3 center;
     public Vector3 size;
 
+    private float time = 0.0f;
+    public float interpolationPeriod = 0.1f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +22,12 @@ public class ObstacleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q))
+        time += Time.deltaTime;
+
+        if (time >= interpolationPeriod)
         {
+            time = 0.0f;
+            // execute block of code here
             SpawnObstacles();
         }
     }
